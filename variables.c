@@ -9,5 +9,13 @@ int main() {
 
     int age = 25;
     // % = format specifier, d = decimal
-    printf("you are %d years old", age);
+    printf("you are %d years old\n", age);
+
+    // always add new line character otherwise print statements
+    // will appear next to each other
+    int year = 2026;
+    printf("this year is %d\n", year);
+
+    int quantity = 1;
+    printf("you have ordered %d x items\n", quantity);
 }
