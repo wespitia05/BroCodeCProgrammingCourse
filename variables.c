@@ -38,5 +38,15 @@ int main() {
     double e = 2.7182818284590;
     printf("the value of e is %.15lf\n", e);
 
+    char grade = 'A'; // char holds single characters, use single quotes
+    // % = format specifier, c = character
+    printf("your grade is %c\n", grade);
+
+    char symbol = '!';
+    printf("your favorite symbol is %c\n", symbol);
+
+    char currency = '$';
+    printf("the currency is %c\n", currency);
+
     return 0; // always add at the end to end the program
 }
