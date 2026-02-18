@@ -28,4 +28,15 @@ int main() {
 
     float temp = -10.1;
     printf("the temperature is %f F\n", temp);
+
+    double pi = 3.14159265358979; // doubles store 15-16 digits after the decimal
+    // % = format specifier, lf = long floating point number
+    // c will only print 6 digits after the decial point, if you want to 
+    // display more you need to add .1, .15, . however many digits. ex: %.15lf, %.2d
+    printf("the value of pi is %.15lf\n", pi);
+
+    double e = 2.7182818284590;
+    printf("the value of e is %.15lf\n", e);
+
+    return 0; // always add at the end to end the program
 }
