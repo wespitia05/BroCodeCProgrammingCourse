@@ -1,6 +1,8 @@
 // preprocessor directive
 // tells compiler to include standard input/output libraries
 #include <stdio.h>
+// includes standard boolean
+#include <stdbool.h>
 
 // function always has to be main
 int main() {
@@ -57,6 +59,30 @@ int main() {
 
     char email[] = "fake123@email.com";
     printf("your email is %s\n", email);
+
+    bool isOnline = true; // true or 1, false or 0
+    if(isOnline) {
+        printf("you are online");
+    }
+    else {
+        printf("you are offline");
+    }
+
+    bool isStudent = false;
+    if(isStudent) {
+        printf("you are a student");
+    }
+    else {
+        printf("you are not a student");
+    }
+
+    bool forSale = true;
+    if(forSale) {
+        printf("that item is for sale");
+    }
+    else {
+        printf("that item is not for sale");
+    }
 
     return 0; // always add at the end to end the program
 }
