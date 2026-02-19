@@ -20,5 +20,26 @@ int main() {
     printf("%c", currency); // displays character
     printf("%s", name); // displays string (arracy of characters)
 
+    // setting width of our output
+    int num1 = 1;
+    int num2 = 10;
+    int num3 = 100;
+    int num4 = -100;
+
+    // prints the numbers with 3 spaces (right justify)
+    printf("%3d\n", num1);
+    printf("%3d\n", num2);
+    printf("%3d\n", num3);
+    // prints the numbers with 4 spaces (left justify)
+    printf("%-4d\n", num1);
+    printf("%-4d\n", num2);
+    printf("%-4d\n", num3);
+    // prints the numbers with preceding +/- sign (right justify)
+    printf("%+d\n", num1);
+    printf("%+d\n", num2);
+    printf("%+d\n", num3);
+    printf("%+d\n", num4);
+
+
     return 0;
 }
