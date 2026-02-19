@@ -40,6 +40,26 @@ int main() {
     printf("%+d\n", num3);
     printf("%+d\n", num4);
 
+    float price1 = 19.99;
+    float price2 = 1.50;
+    float price3 = -100.00;
+
+    // default behavior displays 6 digits after decimal
+    printf("%f\n", price1);
+    printf("%f\n", price2);
+    printf("%f\n", price3);
+    // .2 will display 2 digits after decimal
+    printf("%.2f\n", price1);
+    printf("%.2f\n", price2);
+    printf("%.2f\n", price3);
+    // .1 will display 1 digit after decimal
+    printf("%.1f\n", price1);
+    printf("%.1f\n", price2);
+    printf("%.1f\n", price3);
+    // 7.2 will display 2 digits after decimal and minimum width of 7 digits
+    printf("%7.2f\n", price1);
+    printf("%7.2f\n", price2);
+    printf("%7.2f\n", price3);
 
     return 0;
 }
