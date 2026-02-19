@@ -48,5 +48,15 @@ int main() {
     char currency = '$';
     printf("the currency is %c\n", currency);
 
+    char name[] = "william"; // use array to print multiple characters
+    // % = format specifier, s = string
+    printf("hello %s\n", name);
+
+    char food[] = "pizza";
+    printf("your favorite food is %s\n", food);
+
+    char email[] = "fake123@email.com";
+    printf("your email is %s\n", email);
+
     return 0; // always add at the end to end the program
 }
