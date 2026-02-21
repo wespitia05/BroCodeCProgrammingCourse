@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h> // provides functions for working with strings
 
 int main() {
 
@@ -22,6 +23,9 @@ int main() {
     // scanf wont read any whitespace
     // use fgets(variable, sizeof(variable), stdin) // stdin = standard input
     fgets(name, sizeof(name), stdin);
+    // removes new line character added when pressing enter
+    // sets it equal to a null terminator
+    name[strlen(name) - 1] = '\0';
 
     printf("%d\n", age);
     printf("%.2f\n", gpa);
