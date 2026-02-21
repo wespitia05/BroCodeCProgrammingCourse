@@ -15,6 +15,12 @@ int main() {
     // x++; // use int
     // x--; // use int
 
+    // augmented assignent operators
+    // x+=2; // same thing as x = x + 2
+    // x-=2; // same thing as x = x - 3
+    // x*=2; // same thing as x = x * 2
+    // x/=2; // same thing as x = x / 2
+
     printf("%d", z);
 
     return 0;
