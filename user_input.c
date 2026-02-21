@@ -17,6 +17,12 @@ int main() {
     printf("enter your grade: ");
     scanf(" %c", &grade); // space before format specifier to skip new line character
 
+    getchar(); // clears the new line character in the input buffer
+    printf("enter your name: ");
+    // scanf wont read any whitespace
+    // use fgets(variable, sizeof(variable), stdin) // stdin = standard input
+    fgets(name, sizeof(name), stdin);
+
     printf("%d\n", age);
     printf("%.2f\n", gpa);
     printf("%c\n", grade);
