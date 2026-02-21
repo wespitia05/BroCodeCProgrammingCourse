@@ -10,5 +10,9 @@ int main() {
     char currency = '$';
     float total = 0.0f;
 
+    printf("what item would you like to buy?: ");
+    printf("what is the price for each?: ");
+    printf("how many would you like?: ");
+
     return 0;
 }
