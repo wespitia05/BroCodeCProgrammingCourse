@@ -14,6 +14,9 @@ int main() {
     printf("enter your gpa: ");
     scanf("%f", &gpa);
 
+    printf("enter your grade: ");
+    scanf(" %c", &grade); // space before format specifier to skip new line character
+
     printf("%d\n", age);
     printf("%.2f\n", gpa);
     printf("%c\n", grade);
