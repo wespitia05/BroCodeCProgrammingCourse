@@ -4,7 +4,10 @@ int main() {
     // if statement = do some code if a condition is true
     //                if the condition is false, don't do it
 
-    int age = 12;
+    int age = 0;
+
+    printf("enter your age: ");
+    scanf("%d", &age);
 
     if (age >= 65) {
         printf("you are a senior");
