@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     // if statement = do some code if a condition is true
     //                if the condition is false, don't do it
 
+    /*
     int age = 0;
 
     printf("enter your age: ");
@@ -23,6 +25,16 @@ int main() {
     }
     else {
         printf("you are not an adult");
+    }
+    */
+
+    bool isStudent = true;
+
+    if (isStudent) {
+        printf("you are a student");
+    }
+    else {
+        printf("you are not a student");
     }
 
     return 0;
