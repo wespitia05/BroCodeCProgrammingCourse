@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 int main() {
     // if statement = do some code if a condition is true
@@ -26,7 +27,6 @@ int main() {
     else {
         printf("you are not an adult");
     }
-    */
 
     bool isStudent = true;
 
@@ -35,6 +35,20 @@ int main() {
     }
     else {
         printf("you are not a student");
+    }
+    */
+
+    char name[50] = "";
+
+    printf("enter your name: ");
+    fgets(name, sizeof(name), stdin); // fgets for string input
+    name[strlen(name) - 1] = '\0'; // always remove excess new line
+
+    if (strlen(name) == 0) {
+        printf("you did not enter your name");
+    } 
+    else {
+        printf("hello %s", name);
     }
 
     return 0;
