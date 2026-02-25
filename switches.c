@@ -5,32 +5,35 @@ int main() {
     // switch = an alternative to using many if-else statements
     //          more efficient w/ fixed integer values
 
-    int dayOfWeek = 1;
+    int dayOfWeek = 0;
+
+    printf("enter a day of the week (M, T, W, R, F, S, U): ");
+    scanf("%c", &dayOfWeek);
 
     switch(dayOfWeek) {
-        case 1:
+        case 'M':
             printf("it is monday");
             break;
-        case 2:
+        case 'T':
             printf("it is tuesday");
             break;
-        case 3:
+        case 'W':
             printf("it is wednesday");
             break;
-        case 4:
+        case 'R':
             printf("it is thursday");
             break;
-        case 5:
+        case 'F':
             printf("it is friday");
             break;
-        case 6:
+        case 'S':
             printf("it is saturday");
             break;
-        case 7:
+        case 'U':
             printf("it is sunday");
             break;
         default:
-            printf("please only enter a number 1-7")
+            printf("please only enter a day of the week (M, T, W, R, F, S, U)");
     }
 
     return 0;
