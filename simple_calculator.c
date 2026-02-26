@@ -11,12 +11,29 @@ int main() {
 
     printf("enter the first number: ");
     scanf("%lf", &num1);
-    
+
     printf("enter the operator (+ - * /): ");
-    scanf("%c", &operator);
+    scanf(" %c", &operator); // clear new line from input buffer
 
     printf("enter the second number: ");
     scanf("%lf", &num2);
+
+    switch(operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+    }
+
+    printf("result: %.4lf", result);
 
     return 0;
 }
