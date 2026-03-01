@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h> // linux/mac
 
 int main() {
     // for loop = repeat some code a limited # of times
@@ -16,8 +17,11 @@ int main() {
 
     // start at 10 and count down to 0
     for(int i = 10; i >= 0; i--) {
+        // will stop for 1 second after each countdown
+        sleep(1); // pass in argument which is in seconds, not milliseconds
         printf("%d\n", i);
     }
+    printf("HAPPY NEW YEAR!\n");
 
     // start at 10 and count down to 0 by twos
     for(int i = 10; i >= 0; i-=2) {
