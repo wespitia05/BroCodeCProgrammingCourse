@@ -11,5 +11,14 @@ int main() {
         scanf("%d", &number);
     }
 
+    // same concept, do the code once then check the while loop to see if 
+    // it meets the condition
+    /*
+        do {
+            printf("enter a number greater than 0: ");
+            scanf("%d", &number);
+        } while(number <= 0);
+    */
+
     return 0;
 }
