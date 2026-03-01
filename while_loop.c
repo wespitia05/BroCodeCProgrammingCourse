@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     // while loop = continue some code WHILE the condition remains true
@@ -19,6 +20,22 @@ int main() {
             scanf("%d", &number);
         } while(number <= 0);
     */
+
+    char name[50] = "";
+
+    printf("enter your name: ");
+    fgets(name, sizeof(name), stdin); // accept line of text
+    name[strlen(name) - 1] = '\0'; // remove new line character from input buffer
+
+    // check to see if the user didn't input anything for the name
+    // therefore it will be a loop until they enter a string more than 0 characters
+    while (strlen(name) == 0) {
+        printf("name cannot be empty! please enter your name: ");
+        fgets(name, sizeof(name), stdin); // accept line of text
+        name[strlen(name) - 1] = '\0'; // remove new line character from input buffer   
+    }
+
+    printf("hello %s", name);
 
     return 0;
 }
