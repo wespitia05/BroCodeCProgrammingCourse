@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 int main() {
     // while loop = continue some code WHILE the condition remains true
@@ -36,6 +37,22 @@ int main() {
     }
 
     printf("hello %s", name);
+
+    bool isRunning = true;
+    char response = '\0';
+
+    while(isRunning) {
+        printf("you are playing a game\n");
+        printf("would you like to continue? (Y = yes, N = no): ");
+
+        scanf(" %c", &response); // space before format specifier to ignore whitespace
+
+        if(response != 'Y' && response != 'y') {
+            isRunning = false;
+        }
+    }
+
+    printf("you exit the game");
 
     return 0;
 }
