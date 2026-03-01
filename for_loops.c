@@ -14,5 +14,15 @@ int main() {
         printf("%d\n", i);
     }
 
+    // start at 10 and count down to 0
+    for(int i = 10; i >= 0; i--) {
+        printf("%d\n", i);
+    }
+
+    // start at 10 and count down to 0 by twos
+    for(int i = 10; i >= 0; i-=2) {
+        printf("%d\n", i);
+    }
+
     return 0;
 }
