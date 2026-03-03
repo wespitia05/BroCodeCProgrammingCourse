@@ -20,21 +20,29 @@ int main() {
 
     switch(userChoice) {
         case 1:
-            printf("you chose rock\n");
+            printf("you chose ROCK!\n");
+            break;
         case 2:
-            printf("you chose paper\n");
+            printf("you chose PAPER!\n");
+            break;
         case 3:
-            printf("you chose scissors\n");
+            printf("you chose SCISSORS!\n");
+            break;
     }
 
     switch(computerChoice) {
         case 1:
-            printf("computer chose rock\n");
+            printf("computer chose ROCK!\n");
+            break;
         case 2:
-            printf("computer chose paper\n");
+            printf("computer chose PAPER!\n");
+            break;
         case 3:
-            printf("computer chose scissors\n");
+            printf("computer chose SCISSORS!\n");
+            break;
     }
+
+    checkWinner(userChoice, computerChoice);
 
     return 0;
 }
@@ -60,5 +68,19 @@ int getUserChoice() {
 }
 
 void checkWinner(int userChoice, int computerChoice) {
-
+    if(userChoice == computerChoice) {
+        printf("it's a TIE!");
+    }
+    else if(userChoice == 1 && computerChoice == 3) {
+        printf("you WIN!");
+    }
+    else if(userChoice == 2 && computerChoice == 1) {
+        printf("you WIN!");
+    }
+    else if(userChoice == 3 && computerChoice == 2) {
+        printf("you WIN!");
+    }
+    else {
+        printf("you LOSE!");
+    }
 }
