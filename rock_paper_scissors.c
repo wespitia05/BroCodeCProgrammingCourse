@@ -18,11 +18,14 @@ int main() {
     int userChoice = getUserChoice();
     int computerChoice = getComputerChoice();
 
+    printf("%d\n", computerChoice);
+
     return 0;
 }
 
 int getComputerChoice() {
-
+    // returns a random number between 1 and 3
+    return (rand() % 3) + 1;
 }
 
 int getUserChoice() {
