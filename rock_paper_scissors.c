@@ -19,6 +19,7 @@ int main() {
     int computerChoice = getComputerChoice();
 
     printf("%d\n", computerChoice);
+    printf("%d\n", userChoice);
 
     return 0;
 }
@@ -29,7 +30,18 @@ int getComputerChoice() {
 }
 
 int getUserChoice() {
+    int choice = 0;
 
+    do {
+        printf("choose an option:\n");
+        printf("\t1. ROCK\n");
+        printf("\t2. PAPER\n");
+        printf("\t3. SCISSORS\n");
+        printf("enter your choice: ");
+        scanf("%d", &choice);
+    } while(choice < 1 || choice > 3); // to escape this loop, user must choice 1, 2 or 3
+
+    return choice;
 }
 
 void checkWinner(int userChoice, int computerChoice) {
