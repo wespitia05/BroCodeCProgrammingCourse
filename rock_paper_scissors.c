@@ -18,8 +18,23 @@ int main() {
     int userChoice = getUserChoice();
     int computerChoice = getComputerChoice();
 
-    printf("%d\n", computerChoice);
-    printf("%d\n", userChoice);
+    switch(userChoice) {
+        case 1:
+            printf("you chose rock\n");
+        case 2:
+            printf("you chose paper\n");
+        case 3:
+            printf("you chose scissors\n");
+    }
+
+    switch(computerChoice) {
+        case 1:
+            printf("computer chose rock\n");
+        case 2:
+            printf("computer chose paper\n");
+        case 3:
+            printf("computer chose scissors\n");
+    }
 
     return 0;
 }
