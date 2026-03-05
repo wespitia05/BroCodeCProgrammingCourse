@@ -11,3 +11,16 @@ int main() {
 
     return 0;
 }
+
+// declare our functions
+void checkBalance(float balance) {
+
+}
+
+float deposit() {
+    return 0.0;
+}
+
+float withdraw(float balance) {
+    return 0.0;
+}
