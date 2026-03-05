@@ -9,6 +9,16 @@ float withdraw(float balance);
 
 int main() {
 
+    int choice = 0;
+    float balance = 0.0f;
+
+    printf("*** WELCOME TO THE BANK ***");
+
+    // do the code while the choice does not equal 4 (exit)
+    do {
+
+    } while(choice != 4);
+
     return 0;
 }
 
