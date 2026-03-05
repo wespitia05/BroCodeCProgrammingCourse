@@ -20,9 +20,27 @@ int main() {
         printf("\n1. check balance\n");
         printf("\n2. deposit money\n");
         printf("\n3. withdraw money\n");
-        printf("\n4. exits\n");
+        printf("\n4. exit\n");
         printf("\nenter your choice: ");
         scanf("%d", &choice);
+
+        switch(choice) {
+            case 1: 
+                checkBalance(balance);
+                break;
+            case 2: 
+                balance += deposit();
+                break;
+            case 3: 
+                balance -= withdraw(balance);
+                break;
+            case 4: 
+                printf("\nthank you for using the bank!\n");
+                break;
+            default:
+                printf("\ninvalid choice! please select 1 - 4\n");
+        }
+
     } while(choice != 4);
 
     return 0;
