@@ -16,7 +16,13 @@ int main() {
 
     // do the code while the choice does not equal 4 (exit)
     do {
-
+        printf("\nselect an option:\n");
+        printf("\n1. check balance\n");
+        printf("\n2. deposit money\n");
+        printf("\n3. withdraw money\n");
+        printf("\n4. exits\n");
+        printf("\nenter your choice: ");
+        scanf("%d", &choice);
     } while(choice != 4);
 
     return 0;
