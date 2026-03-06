@@ -9,14 +9,18 @@ int main() {
     printf("%d, ", numbers[1]);
     printf("%d, ", numbers[2]);
     printf("%d, ", numbers[3]);
-    printf("%d", numbers[4]);
+    printf("%d ", numbers[4]);
 
     char grades[] = {'A', 'B', 'C', 'D', 'F'};
     printf("%c, ", grades[0]);
     printf("%c, ", grades[1]);
     printf("%c, ", grades[2]);
     printf("%c, ", grades[3]);
-    printf("%c", grades[4]);
+    printf("%c ", grades[4]);
+
+    for(int i = 0; i < 5; i++) {
+        printf("%c ", grades[i]);
+    }
 
     return 0;
 }
