@@ -11,5 +11,12 @@ int main() {
     printf("%d, ", numbers[3]);
     printf("%d", numbers[4]);
 
+    char grades[] = {'A', 'B', 'C', 'D', 'F'};
+    printf("%c, ", grades[0]);
+    printf("%c, ", grades[1]);
+    printf("%c, ", grades[2]);
+    printf("%c, ", grades[3]);
+    printf("%c", grades[4]);
+
     return 0;
 }
