@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     // array = a fixed-size collection of elements of the same data type
@@ -11,6 +12,10 @@ int main() {
     printf("%d, ", numbers[3]);
     printf("%d ", numbers[4]);
 
+    for(int i = 0; i < 5; i++) {
+        printf("%c ", numbers[i]);
+    }
+
     char grades[] = {'A', 'B', 'C', 'D', 'F'};
     printf("%c, ", grades[0]);
     printf("%c, ", grades[1]);
@@ -20,6 +25,18 @@ int main() {
 
     for(int i = 0; i < 5; i++) {
         printf("%c ", grades[i]);
+    }
+
+    char name[] = "william espitia";
+    printf("%c ", name[0]);
+    printf("%c ", name[2]);
+    printf("%c ", name[4]);
+    printf("%c ", name[6]);
+    printf("%c ", name[8]);
+    printf("%c ", name[10]);
+
+    for(int i = 0; i < strlen(name); i++) {
+        printf("%c ", name[i]);
     }
 
     return 0;
