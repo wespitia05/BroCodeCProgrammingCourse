@@ -48,7 +48,7 @@ int main() {
 
 // declare our functions
 void checkBalance(float balance) {
-
+    printf("\nyou current balance is: $%.2f", balance);
 }
 
 float deposit() {
