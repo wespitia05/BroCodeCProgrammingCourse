@@ -6,7 +6,8 @@ int main() {
 
     int numbers[][3] = {{1, 2, 3}, 
                         {4, 5, 6}, 
-                        {7, 8, 9}};
+                        {7, 8, 9},
+                        {10, 11, 12}};
 
     printf("%d ", numbers[0][0]); // row 0, column 0
     printf("%d ", numbers[0][1]); // row 0, column 1
@@ -19,6 +20,14 @@ int main() {
     printf("%d ", numbers[2][0]); // row 2, column 0
     printf("%d ", numbers[2][1]); // row 2, column 1
     printf("%d\n", numbers[2][2]); // row 2, column 2
+
+    // using for loops
+    for(int i = 0; i < 4; i++) { // rows
+        for(int j = 0; j < 3; j++) { // columns
+            printf("%d ", numbers[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
