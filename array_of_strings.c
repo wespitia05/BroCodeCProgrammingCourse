@@ -28,6 +28,7 @@ int main() {
     // each with a max character count of 25
     char names[3][25] = {0};
 
+    /*
     printf("enter a name: ");
     fgets(names[0], sizeof(names[0]), stdin);
     names[0][strlen(names[0]) - 1] = '\0';
@@ -39,10 +40,24 @@ int main() {
     printf("enter a name: ");
     fgets(names[2], sizeof(names[2]), stdin);
     names[2][strlen(names[2]) - 1] = '\0';
+    */
 
+    /*
     printf("%s\n", names[0]);
     printf("%s\n", names[1]);
     printf("%s\n", names[2]);
+    */
+
+    // printing user input of array using for loop
+    for(int i = 0; i < 3; i++) {
+        printf("enter a name: ");
+        fgets(names[0], sizeof(names[0]), stdin);
+        names[0][strlen(names[0]) - 1] = '\0';
+    }
+
+    for(int i = 0; i < 3; i++) {
+        printf("%s\n", names[i]);
+    }
 
     return 0;
 }
