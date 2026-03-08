@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     // array of strings
@@ -21,6 +22,27 @@ int main() {
     for(int i = 0; i < size; i++) {
         printf("%s\n", fruits[i]);
     }
+
+    // EXAMPLE //
+    // array of names can hold up to 3 names, 
+    // each with a max character count of 25
+    char names[3][25] = {0};
+
+    printf("enter a name: ");
+    fgets(names[0], sizeof(names[0]), stdin);
+    names[0][strlen(names[0]) - 1] = '\0';
+
+    printf("enter a name: ");
+    fgets(names[1], sizeof(names[1]), stdin);
+    names[1][strlen(names[1]) - 1] = '\0';
+
+    printf("enter a name: ");
+    fgets(names[2], sizeof(names[2]), stdin);
+    names[2][strlen(names[2]) - 1] = '\0';
+
+    printf("%s\n", names[0]);
+    printf("%s\n", names[1]);
+    printf("%s\n", names[2]);
 
     return 0;
 }
