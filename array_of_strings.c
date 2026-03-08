@@ -4,8 +4,9 @@ int main() {
     // array of strings
 
     char fruits[][10] = {"Apple", "Banana", "Coconut"};
+    int size = sizeof(fruits) / sizeof(fruits[0]);
 
-    for(int i = 0; i < 3; i++) {
+    for(int i = 0; i < size; i++) {
         printf("%s\n", fruits[i]);
     }
 
