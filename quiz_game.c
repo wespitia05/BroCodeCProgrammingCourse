@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 // QUIZ GAME //
 
@@ -36,6 +37,8 @@ int main() {
         printf("\nenter your choice: ");
         scanf(" %c", &guess);
 
+        guess = toupper(guess); // makes user input uppercase
+
         if(guess == answerKey[i]) {
             printf("CORRECT!\n");
             score++;
@@ -44,6 +47,8 @@ int main() {
             printf("WRONG!\n");
         }
     }
+
+    printf("\nyour score is %d out of %d points\n", score, questionCount);
 
     return 0;
 }
