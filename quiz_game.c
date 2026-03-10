@@ -21,6 +21,12 @@ int main() {
     // 1D array of characters to hold our answers
     char answerKey[] = {'A', 'B', 'D', 'B'};
 
+    // returns the number of questions we have (4)
+    int questionCount = sizeof(questions) / sizeof(questions[0]);
+
+    char guess = '\0'; // holds our number of guesses
+    int score = 0; // holds our score
+
     printf("%s\n", questions[0]);
     printf("%s", options[0]);
 
