@@ -27,8 +27,23 @@ int main() {
     char guess = '\0'; // holds our number of guesses
     int score = 0; // holds our score
 
-    printf("%s\n", questions[0]);
-    printf("%s", options[0]);
+    printf("*** QUIZ GAME ***");
+
+    for(int i = 0; i < questionCount; i++) {
+        printf("\n%s\n", questions[i]);
+        printf("\n%s\n", options[i]);
+
+        printf("\nenter your choice: ");
+        scanf(" %c", &guess);
+
+        if(guess == answerKey[i]) {
+            printf("CORRECT!\n");
+            score++;
+        }
+        else {
+            printf("WRONG!\n");
+        }
+    }
 
     return 0;
 }
