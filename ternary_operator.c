@@ -16,5 +16,9 @@ int main() {
     // if online is true, return "online", if false return "offline"
     printf("%s", (isOnline) ? "online" : "offline");
 
+    int number = 8;
+    // if the number is divisible by 2 with a remainder of 0, return even otherwise return odd
+    printf("%d is %s", number, (number % 2 == 0) ? "even" : "odd");
+
     return 0;
 }
