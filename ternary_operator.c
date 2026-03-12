@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     // ternary operator ? = shorthand for if-else statements
@@ -10,6 +11,10 @@ int main() {
     int max = (x > y) ? x : y;
 
     printf("%d", max);
+
+    bool isOnline = true;
+    // if online is true, return "online", if false return "offline"
+    printf("%s", (isOnline) ? "online" : "offline");
 
     return 0;
 }
