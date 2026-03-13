@@ -24,5 +24,11 @@ int main() {
     // if the age is greater than 18 print adult, otherwise print child
     printf("%s", (age > 18) ? "adult" : "child");
 
+    int hours = 11;
+    int minutes = 3;
+    // if hours is less than 12 print am, otherwise print pm
+    // %02d adds zeros before digit
+    printf("%02d:%02d %s", hours, minutes, (hours < 12) ? "am" : "pm");
+
     return 0;
 }
