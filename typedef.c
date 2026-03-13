@@ -2,6 +2,8 @@
 
 // change int to Number
 typedef int Number;
+// change char to String
+typedef char String[50];
 
 int main() {
     // typedef = reserved keyword that gives an existing datatype a "nickname"
@@ -14,6 +16,10 @@ int main() {
     Number z = x + y;
 
     printf("%d", z);
+
+    String name[] = "william espitia";
+
+    printf("%s", name);
 
     return 0;
 }
