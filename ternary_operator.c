@@ -20,5 +20,9 @@ int main() {
     // if the number is divisible by 2 with a remainder of 0, return even otherwise return odd
     printf("%d is %s", number, (number % 2 == 0) ? "even" : "odd");
 
+    int age = 21;
+    // if the age is greater than 18 print adult, otherwise print child
+    printf("%s", (age > 18) ? "adult" : "child");
+
     return 0;
 }
