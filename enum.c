@@ -5,6 +5,12 @@ typedef enum {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 } Day;
 
+typedef enum {
+    SUCCESS, FAILURE, PENDING
+} Status;
+
+void connectStatus(Status status); // function prototype
+
 int main() {
     // enum = a user defined data type that consists
     //        of a set of named integer constants
@@ -27,5 +33,23 @@ int main() {
         printf("its the weekday");
     }
 
+    Status status = SUCCESS;
+
+    connectStatus(status);
+
     return 0;
+}
+
+void connectStatus(Status status) {
+    switch(status) {
+        case SUCCESS:
+            printf("connection was successful\n");
+            break;
+        case FAILURE:
+            printf("could not connect\n");
+            break;
+        case PENDING:
+            printf("connecting...\n");
+            break;
+    }
 }
