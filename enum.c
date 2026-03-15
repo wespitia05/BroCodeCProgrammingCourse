@@ -20,5 +20,12 @@ int main() {
     printf("%d", today); // will print value of sunday (0)
     printf("%d", tomorrow); // will print value of monday (1)
 
+    if (today == SUNDAY || today == SATURDAY) {
+        printf("its the weekend");
+    }
+    else {
+        printf("its the weekday");
+    }
+
     return 0;
 }
