@@ -10,6 +10,9 @@ typedef struct {
     bool isFullTime;
 } Student;
 
+// function prototype
+void printStudent(Student student);
+
 int main() {
     // struct = a custom container that holds multiple
     //          pieces of related information
@@ -25,6 +28,12 @@ int main() {
     student4.gpa = 4.0;
     student4.isFullTime = true;
 
+    printStudent(student1);
+    printStudent(student2);
+    printStudent(student3);
+    printStudent(student4);
+
+    /*
     printf("%s\n", student1.name);
     printf("%d\n", student1.age);
     printf("%.2f\n", student1.gpa);
@@ -44,6 +53,16 @@ int main() {
     printf("Age: %d\n", student4.age);
     printf("GPA: %.2f\n", student4.gpa);
     printf("Full Time: %s\n", (student4.isFullTime) ? "yes" : "no");
+    */
 
     return 0;
+}
+
+// easier way to print all students
+void printStudent(Student student) {
+    printf("Name: %s\n", student.name);
+    printf("Age: %d\n", student.age);
+    printf("GPA: %.2f\n", student.gpa);
+    printf("Full Time: %s\n", (student.isFullTime) ? "yes" : "no");
+    printf("\n");
 }
