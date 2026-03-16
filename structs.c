@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 // very similar to object oriented programming (oop)
 typedef struct {
@@ -16,6 +17,13 @@ int main() {
     Student student1 = {"Spongbob", 30, 2.5, true};
     Student student2 = {"Patrick", 36, 1.0, false};
     Student student3 = {"Squidward", 49, 3.2, false};
+    Student student4 = {0}; //set all values to 0, neater
+
+    // assigning data to struct
+    strcpy(student4.name, "Sandy"); // assigning string
+    student4.age = 27;
+    student4.gpa = 4.0;
+    student4.isFullTime = true;
 
     printf("%s\n", student1.name);
     printf("%d\n", student1.age);
@@ -31,6 +39,11 @@ int main() {
     printf("Age: %d\n", student3.age);
     printf("GPA: %.2f\n", student3.gpa);
     printf("Full Time: %s\n", (student3.isFullTime) ? "yes" : "no");
+
+    printf("Name: %s\n", student4.name);
+    printf("Age: %d\n", student4.age);
+    printf("GPA: %.2f\n", student4.gpa);
+    printf("Full Time: %s\n", (student4.isFullTime) ? "yes" : "no");
 
     return 0;
 }
