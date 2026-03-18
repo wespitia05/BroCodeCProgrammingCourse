@@ -4,7 +4,7 @@ int main() {
     // WRITE A FILE 
 
     // create pointer file struct, open it in the "write" mode
-    FILE *pFile = fopen("output.txt", "w");
+    FILE *pFile = fopen("/Users/william/Desktop/output.txt", "w");
 
     char text[] = "BOOTY BOOTY BOOTY\nROCKIN' EVERYWHERE!";
 
