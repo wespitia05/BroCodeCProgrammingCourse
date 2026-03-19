@@ -13,12 +13,17 @@ int main() {
     scanf("%d", &number);
 
     // calculate number of players * number of what we are storing
-    int *scores = malloc(number * sizeof(int));
+    int *scores = calloc(number, sizeof(int));
 
     // check to see if pointer is null
     if(scores == NULL) {
         printf("memory allocation failed!\n");
         return 1; // exit program
+    }
+
+    // iterate through the array like data structure
+    for(int i = 0; i < number; i++) {
+        printf("%d ", scores[i]);
     }
 
     free(scores); // returning the "rented" space back to the OS
