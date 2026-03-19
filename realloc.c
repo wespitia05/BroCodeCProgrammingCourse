@@ -26,9 +26,28 @@ int main() {
         scanf("%f", &prices[i]);
     }
 
-    // iterate through the array like data structure
-    for(int i = 0; i < number; i++) {
-        printf("%f ", prices[i]);
+    // adding new number into array
+    int newNumber = 0;
+    printf("enter a new number of prices: ");
+    scanf("%d", &newNumber);
+
+    float *temp = realloc(prices, newNumber * sizeof(float));
+
+    if(temp == NULL) {
+        printf("could not reallocate memory\n");
+    }
+    else {
+        prices = temp;
+        // continue where we left off
+        for(int i = number; i < newNumber; i++) {
+            printf("enter price #%d: ", i + 1);
+            scanf("%f", &prices[i]);
+        }
+
+        // iterate through the array like data structure
+        for(int i = 0; i < newNumber; i++) {
+            printf("$%.2f ", prices[i]);
+        }
     }
 
     free(prices); // returning the "rented" space back to the OS
