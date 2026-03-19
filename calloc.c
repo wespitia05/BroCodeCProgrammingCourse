@@ -21,6 +21,11 @@ int main() {
         return 1; // exit program
     }
 
+    for(int i = 0; i < number; i++) {
+        printf("enter score #%d: ", i + 1);
+        scanf("%d", &scores[i]);
+    }
+
     // iterate through the array like data structure
     for(int i = 0; i < number; i++) {
         printf("%d ", scores[i]);
